@@ -17,6 +17,7 @@ namespace ClinicApp.Migrations
                         DateOfBirth = c.DateTime(nullable: false),
                         Address = c.String(),
                         PhoneNumber = c.String(),
+                        Age = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id);
             
