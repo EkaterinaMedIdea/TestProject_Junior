@@ -1,7 +1,6 @@
 ﻿using System.Windows;
 using ClinicApp.XamlPages;
 using System.Threading;
-using ClinicApp.Migrations;
 using System;
 
 namespace ClinicApp
@@ -14,7 +13,6 @@ namespace ClinicApp
         public MainWindow()
         {
             InitializeComponent();
-            new InitialCreate().Up();
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {

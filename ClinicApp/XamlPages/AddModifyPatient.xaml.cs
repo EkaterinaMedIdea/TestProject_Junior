@@ -109,7 +109,7 @@ namespace ClinicApp.XamlPages
                             DateOfBirth = dateOfBirth.GetValueOrDefault(),
                             Address = address,
                             Gender = gender,
-                            Age = GetAge(dateOfBirth.GetValueOrDefault())
+                            /*Age = GetAge(dateOfBirth.GetValueOrDefault())*/
                         };
                         var sucess = repository.AddPatientCard(patientCard);
                         if (await sucess)
@@ -129,7 +129,7 @@ namespace ClinicApp.XamlPages
                         m_cardToModify.DateOfBirth = dateOfBirth.GetValueOrDefault();
                         m_cardToModify.Address = address;
                         m_cardToModify.Gender = gender;
-                        m_cardToModify.Age = GetAge(dateOfBirth.GetValueOrDefault());
+                        /*m_cardToModify.Age = GetAge(dateOfBirth.GetValueOrDefault());*/
                         repository.ModifyPatientCard(m_cardToModify);
                         mainFrame.GoBack();
                     }
