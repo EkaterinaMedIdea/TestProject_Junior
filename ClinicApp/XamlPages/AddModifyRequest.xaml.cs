@@ -74,7 +74,7 @@ namespace ClinicApp.XamlPages
 
                 }
                 #endregion
-                #region Submitting the reqiest
+                #region Submitting the request
                 if (status)
                 {
                     Boolean isSucceed;
@@ -98,7 +98,7 @@ namespace ClinicApp.XamlPages
                         m_request.DateOfRequest = dateOfRequest.GetValueOrDefault(DateTime.Now);
                         m_request.Purpose = purpose;
                         m_request.RequestType = requestType;
-                        m_request.Patient = new PatientCard();
+// m_request.Patient = new Patient();  Fixed bug (no need in new patient, just put patient data already have)
                         isSucceed = repository.ModifyRequest(m_request);
                     }
                     #endregion

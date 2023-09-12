@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using ClinicApp.XamlPages;
 using System.Threading;
+using System;
 
 namespace ClinicApp
 {
