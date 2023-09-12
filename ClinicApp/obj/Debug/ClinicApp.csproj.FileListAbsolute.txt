@@ -43,8 +43,6 @@ C:\Users\oxotn\OneDrive\Рабочий стол\TestJunior\TestProject_Junior\Te
 C:\Users\oxotn\OneDrive\Рабочий стол\TestJunior\TestProject_Junior\TestProject_Junior\ClinicApp\obj\Debug\XamlPages\AddModifyRequest.baml
 C:\Users\oxotn\OneDrive\Рабочий стол\TestJunior\TestProject_Junior\TestProject_Junior\ClinicApp\obj\Debug\XamlPages\ListOfPatientsPage.baml
 C:\Users\oxotn\OneDrive\Рабочий стол\TestJunior\TestProject_Junior\TestProject_Junior\ClinicApp\obj\Debug\ClinicApp.g.resources
-C:\Users\oxotn\OneDrive\Рабочий стол\TestJunior\TestProject_Junior\TestProject_Junior\ClinicApp\obj\Debug\ClinicApp.Migrations.InitialCreate.resources
-C:\Users\oxotn\OneDrive\Рабочий стол\TestJunior\TestProject_Junior\TestProject_Junior\ClinicApp\obj\Debug\ClinicApp.Migrations.SettingPatientPropToRequired.resources
 C:\Users\oxotn\OneDrive\Рабочий стол\TestJunior\TestProject_Junior\TestProject_Junior\ClinicApp\obj\Debug\ClinicApp.Properties.Resources.resources
 C:\Users\oxotn\OneDrive\Рабочий стол\TestJunior\TestProject_Junior\TestProject_Junior\ClinicApp\obj\Debug\ClinicApp.csproj.GenerateResource.cache
 C:\Users\oxotn\OneDrive\Рабочий стол\TestJunior\TestProject_Junior\TestProject_Junior\ClinicApp\obj\Debug\ClinicApp.csproj.CoreCompileInputs.cache

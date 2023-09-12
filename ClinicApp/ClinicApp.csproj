@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ClinicApp.App</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -88,15 +91,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Migrations\201711021256133_InitialCreate.cs" />
-    <Compile Include="Migrations\201711021256133_InitialCreate.Designer.cs">
-      <DependentUpon>201711021256133_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201711021903154_SettingPatientPropToRequired.cs" />
-    <Compile Include="Migrations\201711021903154_SettingPatientPropToRequired.Designer.cs">
-      <DependentUpon>201711021903154_SettingPatientPropToRequired.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="HelperClasses\RegexpHelper.cs" />
     <Compile Include="XamlPages\AddModifyPatient.xaml.cs">
       <DependentUpon>AddModifyPatient.xaml</DependentUpon>
@@ -151,12 +145,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\201711021256133_InitialCreate.resx">
-      <DependentUpon>201711021256133_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711021903154_SettingPatientPropToRequired.resx">
-      <DependentUpon>201711021903154_SettingPatientPropToRequired.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
