@@ -35,9 +35,9 @@ protected override void OnModelCreating(DbModelBuilder modelBuilder)
 И для решения этой проблемы я обновил пакет Entity Framework с 6.2 до 6.4.4. Перезапустил Visual Studio и команды заработали.)
 
 
-4) Третий баг (при редактировании существующего обращения пациента, приложение падает): System.Data.Entity.Infrastructure.DbUpdateConcurrencyException:
+3) Третий баг (при редактировании существующего обращения пациента, приложение падает): System.Data.Entity.Infrastructure.DbUpdateConcurrencyException:
 'Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded.
- See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.'
+See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.'
 Inner Exception
 OptimisticConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded.
 See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.
