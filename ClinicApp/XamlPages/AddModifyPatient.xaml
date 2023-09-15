@@ -12,7 +12,7 @@
 	<Grid Style="{StaticResource GridTablet}">
         <Rectangle Margin="300,-34,0,0">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="../Resourses/Images/doctor.png"/>
+                <ImageBrush ImageSource="D:/C#/ТЗ в Medidea/ClinicApp/Resourses/Images/doctor.png"/>
             </Rectangle.Fill>
         </Rectangle>
 		<StackPanel x:Name="spPatientForm" Orientation="Vertical" Margin="59,95,-59,-95">

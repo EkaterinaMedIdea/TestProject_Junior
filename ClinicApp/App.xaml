@@ -8,7 +8,7 @@
         <ControlTemplate x:Key="ArrowButton" TargetType="Button">
             <Grid x:Name="templateRefreshBtn" Width="45" Height="45">
                 <Grid.Background>
-                    <ImageBrush ImageSource="Resourses/Images/back_arrow.png" Stretch="Uniform"/>
+                    <ImageBrush ImageSource="D:/C#/ТЗ в Medidea/ClinicApp/Resourses/Images/back_arrow.png" Stretch="Uniform"/>
                 </Grid.Background>
             </Grid>
             <ControlTemplate.Triggers>
@@ -89,7 +89,7 @@
         <Style TargetType="{x:Type Grid}" x:Key="GridTablet">
             <Setter Property="Background">
                 <Setter.Value>
-                    <ImageBrush ImageSource="/Resourses/Images/Tablet.png" AlignmentX="Left" AlignmentY="Top" TileMode="Tile" Stretch="None"/>
+                    <ImageBrush ImageSource="D:/C#/ТЗ в Medidea/ClinicApp/Resourses/Images/Tablet.png" AlignmentX="Left" AlignmentY="Top" TileMode="Tile" Stretch="None"/>
                 </Setter.Value>
             </Setter>
         </Style>
