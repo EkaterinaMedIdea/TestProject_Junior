@@ -21,6 +21,17 @@ namespace ClinicApp.EntityModels
         public Gender Gender { get; set; }
         [Column(TypeName = "datetime2")]
         public DateTime DateOfBirth { get; set; }
+        public int Age
+        {
+            get
+            {
+                DateTime today = DateTime.Today;
+                int age = today.Year - DateOfBirth.Year;
+                if (today.AddYears(-age) < DateOfBirth.Date)
+                    age--;
+                return age;
+            }
+        }
         public String Address { get; set; }
         public String PhoneNumber { get; set; }
         public List<Request> Requests { get; set; }
