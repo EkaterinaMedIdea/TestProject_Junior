@@ -36,9 +36,6 @@ See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understandi
 Inner Exception
 OptimisticConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded.
 See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.
-(Исключение OptimisticConcurrencyException: инструкции Store update, insert или delete повлияли на неожиданное количество строк (0).
-Объекты, возможно, были изменены или удалены с момента загрузки объектов. Видишь http://go.microsoft.com/fwlink/?LinkId=472540 для получения информации о понимании
-и обработке оптимистичных исключений параллелизма.)
 
  ![5](https://github.com/mityaMz1998/TestProject_Junior/assets/100907269/3a22cc11-0077-432a-aa3f-535626bda75b)
 
