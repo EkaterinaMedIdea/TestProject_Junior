@@ -9,7 +9,7 @@ namespace ClinicApp.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
             ContextKey = "ClinicApp.EntityModels.ClinicDbContext";
         }
 
