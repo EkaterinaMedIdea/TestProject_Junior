@@ -1,11 +1,11 @@
-1)Первый баг (в карточке пациента добавить дату рождения в будущем) был обнаружен в классе App.xaml.cs, в методе Page_Loaded. 
+1. Первый баг (в карточке пациента добавить дату рождения в будущем) был обнаружен в классе App.xaml.cs, в методе Page_Loaded. 
 Он заключался в том, что в элементе DatePicker свойства DisplayDateStart и DisplayDateEnd позволяют отобразить диапазон дат.
 Для того, чтобы добавить дату рождения в будущем, можно убрать или закомментировать свойство DisplayDateEnd.
 
 ![1](https://github.com/mityaMz1998/TestProject_Junior/assets/100907269/db252fc9-9824-4c46-a571-3ace6bf48cb9)
 
 
-2) Второй баг: System.Data.Entity.Infrastructure.DbUpdateException: 'An error occurred while updating the entries. See the inner exception for details.' 
+2. Второй баг: System.Data.Entity.Infrastructure.DbUpdateException: 'An error occurred while updating the entries. See the inner exception for details.' 
 Inner Exception :
 SqlException: The conversion of a datetime2 data type to a datetime data type resulted in an out-of-range value. The statement has been terminated.
 (Преобразование типа данных datetime2 в тип данных datetime привело к получению значения, выходящего за пределы диапазона. Действие заявления было прекращено)
@@ -35,7 +35,7 @@ protected override void OnModelCreating(DbModelBuilder modelBuilder)
 И для решения этой проблемы я обновил пакет Entity Framework с 6.2 до 6.4.4. Перезапустил Visual Studio и команды заработали.)
 
 
-3) Третий баг (при редактировании существующего обращения пациента, приложение падает): System.Data.Entity.Infrastructure.DbUpdateConcurrencyException:
+3. Третий баг (при редактировании существующего обращения пациента, приложение падает): System.Data.Entity.Infrastructure.DbUpdateConcurrencyException:
 'Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded.
 See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.'
 Inner Exception
@@ -61,7 +61,7 @@ See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understandi
  ![8](https://github.com/mityaMz1998/TestProject_Junior/assets/100907269/40bd0c02-8412-4bd4-b5d7-6703c8e10ba1)
 
 
-4) Чтобы на форме со списком пациентов добавить столбец «Возраст», нужно создать свойство для модели PatientCard, которое будет выводить полный возраст пациента.
+4. Чтобы на форме со списком пациентов добавить столбец «Возраст», нужно создать свойство для модели PatientCard, которое будет выводить полный возраст пациента.
  
  ![9](https://github.com/mityaMz1998/TestProject_Junior/assets/100907269/b95d10e4-ed24-44df-9879-56b2c14ea658)
  
