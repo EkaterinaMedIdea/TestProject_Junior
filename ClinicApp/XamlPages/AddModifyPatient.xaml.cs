@@ -40,7 +40,7 @@ namespace ClinicApp.XamlPages
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             datePickerBirth.DisplayDateStart = DateTime.Now.AddYears(-100);
-            datePickerBirth.DisplayDateEnd = DateTime.Now;
+            //datePickerBirth.DisplayDateEnd = DateTime.Now;
         }
 
         private async void btnSubmit_Click(object sender, RoutedEventArgs e)

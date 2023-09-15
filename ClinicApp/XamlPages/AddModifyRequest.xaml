@@ -23,7 +23,7 @@
         </Button>
         <Rectangle Margin="300,-34,0,0">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="../Resourses/Images/doctor.png"/>
+                <ImageBrush ImageSource="D:/C#/ТЗ в Medidea/ClinicApp/Resourses/Images/doctor.png"/>
             </Rectangle.Fill>
         </Rectangle>
         <Label Content="Обращение" Foreground="Black" Margin="184,91,-84,-91" FontWeight="SemiBold" FontSize="15"/>

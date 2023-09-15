@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClinicApp"
         mc:Ignorable="d"
-        Title="Учет пациентов" Height="600" Width="1200" Loaded="Window_Loaded" ResizeMode="NoResize" Icon="Resourses/Images/red_cross.ico">
+        Title="Учет пациентов" Height="600" Width="1200" Loaded="Window_Loaded" ResizeMode="NoResize" Icon="D:/C#/ТЗ в Medidea/ClinicApp/Resourses/Images/red_cross.ico">
     <DockPanel x:Name="mainDockPanel" LastChildFill="True">
         <ToolBar x:Name="toolBarMenu" DockPanel.Dock="Top" Height="Auto" Background="White">
             <Button x:Name="btnAddNewPatient" Template="{StaticResource GreenBlueButton}" 

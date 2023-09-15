@@ -1,0 +1,20 @@
+﻿ClinicApp
+
+
+winexe
+C#
+.cs
+D:\C#\ТЗ в Medidea\ClinicApp\obj\Debug\
+ClinicApp
+none
+false
+DEBUG;TRACE
+D:\C#\ТЗ в Medidea\ClinicApp\App.xaml
+4-1716669719
+5-1540113970
+20-1922537061
+221242086121
+MainWindow.xaml;XamlPages\AddModifyPatient.xaml;XamlPages\AddModifyRequest.xaml;XamlPages\ListOfPatientsPage.xaml;
+
+True
+
