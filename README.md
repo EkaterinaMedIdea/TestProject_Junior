@@ -22,14 +22,9 @@ SqlException: The conversion of a datetime2 data type to a datetime data type re
  ![4](https://github.com/mityaMz1998/TestProject_Junior/assets/100907269/519fc7c8-0b6e-4ff3-b890-46e7636ea43c)
  
 Или воспользоваться Fluent API, добавив метод OnModelCreating в класс контекста данных:
-protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<PatientCard>().
-                Property(p => p.DateOfBirth)
-                .HasColumnType("datetime2")
-                .HasPrecision(0)
-                .IsRequired();
-        }
+
+![12](https://github.com/mityaMz1998/TestProject_Junior/assets/100907269/304a8e86-3b59-4776-8b38-670bb47fdb6e)
+
 После этого нужно обновить существующую БД (update-database).
 (P.S: При вводе команд в консоли менеджера пакетов (add-migration, update-database) у меня возникали ошибки «Value cannot be null. Parameter name: type».
 И для решения этой проблемы я обновил пакет Entity Framework с 6.2 до 6.4.4. Перезапустил Visual Studio и команды заработали.)
