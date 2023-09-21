@@ -73,6 +73,11 @@ namespace ClinicApp.XamlPages
                     status = false;
                     messageBuilder.Append("Дата рождения - обязательное поле для ввода.\n");
                 }
+                else if (!dateOfBirth.IsBirthdayValid())
+                {
+                    status = false;
+                    messageBuilder.Append("Дата рождения введена некорректно\n");
+                }
                 #endregion
                 #region Checking entered address
                 if (String.IsNullOrEmpty(address))
@@ -102,7 +107,8 @@ namespace ClinicApp.XamlPages
                             PhoneNumber = phone.ToString(),
                             DateOfBirth = dateOfBirth.GetValueOrDefault(),
                             Address = address,
-                            Gender = gender
+                            Gender = gender,
+                            Age = GetAgeOfPation(dateOfBirth)
                         };
                         var sucess = repository.AddPatientCard(patientCard);
                         if (await sucess)
@@ -122,6 +128,7 @@ namespace ClinicApp.XamlPages
                         m_cardToModify.DateOfBirth = dateOfBirth.GetValueOrDefault();
                         m_cardToModify.Address = address;
                         m_cardToModify.Gender = gender;
+                        m_cardToModify.Age = GetAgeOfPation(dateOfBirth);
                         repository.ModifyPatientCard(m_cardToModify);
                         mainFrame.GoBack();
                     }
@@ -169,6 +176,15 @@ namespace ClinicApp.XamlPages
             datePickerBirth.SelectedDate = cardToModify.DateOfBirth;
             txtBoxAddress.Text = cardToModify.Address;
             comboBlockGender.SelectedIndex = (Int32)cardToModify.Gender;
+        }
+        public Int32 GetAgeOfPation(DateTime? birthday)
+        {
+            DateTime dateOfBirthday = Convert.ToDateTime(birthday);
+            var currentDay = DateTime.Now;
+
+            return currentDay.Year - dateOfBirthday.Year - 1 +
+                ((currentDay.Month > dateOfBirthday.Month || currentDay.Month == dateOfBirthday.Month && currentDay.Day >= dateOfBirthday.Day)
+                ? 1 : 0);
         }
     }
 }
